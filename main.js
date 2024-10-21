@@ -12,25 +12,25 @@ function verificarPalpite() {
     if (contagem === 1) {
         palpites.textContent = "Palpites anteriores: ";
     }
-}
 
-palpites.textContent += palpiteUsuario + " ";
+    palpites.textContent += palpiteUsuario + " ";
 
-if (palpiteUsuario === numeroAleatorio) {
-    ultimoResultado.textContent = "vosê acerto disgrasadooo!";
-    ultimoResultado.style.backgroundColor = "green";
-    baixoOuAlto.textContent = "";
-    finalizarJogo();
-} else if (contagemPalpites === 10) {
-    ultimoResultado.textContent = `perdeu otario '-'`;
-    baixoOuAlto.textContent = "";
-    finalizarJogo();
-} else {
-    ultimoResultado.textContent = "Errado pora";
-    ultimoResultado.style.backgroundColor = "red";
-    if (palpiteUsuario < numeroAleatorio) {
-        baixoOuAlto.textContent = "ta baixo nengue";
-    } else if (ultimoResultado > numeroAleatorio) {
-        baixoOuAlto.textContent = "ta mais alto nengue";
+    if (palpiteUsuario === numeroAleatorio) {
+        ultimoResultado.textContent = "vosê acerto disgrasadooo!";
+        ultimoResultado.style.backgroundColor = "green";
+        baixoOuAlto.textContent = "";
+        finalizarJogo();
+    } else if (contagemPalpites === 10) {
+        ultimoResultado.textContent = `perdeu otario '-'`;
+        baixoOuAlto.textContent = "";
+            finalizarJogo();
+    } else {
+        ultimoResultado.textContent = "Errado pora";
+        ultimoResultado.style.backgroundColor = "red";
+        if (palpiteUsuario < numeroAleatorio) {
+            baixoOuAlto.textContent = "ta baixo nengue";
+        } else if (ultimoResultado > numeroAleatorio) {
+            baixoOuAlto.textContent = "ta mais alto nengue";
+        }
     }
 }
