@@ -40,3 +40,15 @@ function verificarPalpite() {
 }
 
 envioPalpite.addEventListener("click", verificarPalpite();
+
+function finalizarJogo() {
+    campoPalpite.disabled = true;
+    envioPalplite.disabled = true;
+    botaoReiniciar = document.createElement('button');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo());
+}
+
+function reiniciarJogo() {
+    
+}
