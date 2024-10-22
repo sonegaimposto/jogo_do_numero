@@ -33,4 +33,8 @@ function verificarPalpite() {
             baixoOuAlto.textContent = "ta mais alto nengue";
         }
     }
+
+    contagemPalpites++;
+    campoPalpite.value = "";
+    campoPalpite.focus();
 }
