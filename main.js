@@ -39,7 +39,7 @@ function verificarPalpite() {
     campoPalpite.focus();
 }
 
-envioPalpite.addEventListener("click", verificarPalpite();
+envioPalpite.addEventListener("click", verificarPalpite());
 
 function finalizarJogo() {
     campoPalpite.disabled = true;
